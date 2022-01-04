@@ -1,0 +1,199 @@
+/* Colors and Themes */
+:root {
+    --maroon: #500000;
+
+    /* Light Theme */
+    --background-color-light: #f5f7fa;
+    --primary-color-light: #e4e7eb;
+    --secondary-color-light: #cbd2d9;
+    --tertiary-color-light: #9aa5b1;
+
+    /* Dark Theme */
+    --background-color-dark: #1f2933;
+    --primary-color-dark: #323f4b;
+    --secondary-color-dark: #3e4c59;
+    --tertiary-color-dark: #52606d; 
+}
+
+.light-theme {
+    --background-color: var(--background-color-light);
+    --primary-color: var(--primary-color-dark);
+    --secondary-color: var(--secondary-color-dark);
+    --tertiary-color: var(--tertiary-color-dark);
+}
+.dark-theme {
+    --background-color: var(--background-color-dark);
+    --primary-color: var(--primary-color-light);
+    --secondary-color: var(--secondary-color-light); 
+    --tertiary-color: var(--tertiary-color-light);
+}
+
+body {  /* don't need all bodies to be the same just place variable colors wherever used */
+    margin-top: 51px;  /* Margin top for sticky navbar, must be greater than navbar height */
+    margin-left: 150px;
+    margin-right: 150px;
+
+    background-color: var(--background-color);  /* place variable wherever I use this color */
+    color: var(--primary-color);
+
+    font-family: Helvetica, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {  /* Text for landing page */
+    font-size: 170px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+h2 {  /* Headings for pages */
+    font-size: 95px;
+    font-weight: 700;
+    text-transform: uppercase; 
+    margin-top: 50px;
+    color: var(--primary-color);
+}
+
+h3 {  /* Sub-headings */
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 50px;
+    color: var(--secondary-color);
+}
+
+h4 {  /* Smaller sub-headings */
+    font-size: 26px;
+    font-weight: 600;
+    margin-top: 50px;
+    color: var(--secondary-color);
+}
+
+h5 {  /* Carousel headings */
+    font-size: 26px;
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+.p1 {  /* Regular body text */
+    font-size: 18px;
+    color: var(--tertiary-color);
+}
+
+.p2 {  /* Bottom text*/
+    font-size: 18px;
+    color: var(--tertiary-color);
+    margin-bottom: 120px;
+}
+
+.p3 {  /* Carousel text */
+    font-size: 16px;
+    color: var(--tertiary-color);
+}
+
+/* Navbar Customization */
+.navbar {  /* Changes navbar background color */
+    background-color: var(--background-color);
+    height: 50px;
+    left:150px;
+    right:150px;
+    font-size: 18px;
+}
+
+.navbar a {  /* Changes navbar text color */
+    color: var(--primary-color);
+}
+
+.navbar a:hover {  /* Changes navbar hover color */
+    color: var(--tertiary-color);
+}
+
+/* Link Customization */
+a.external:link {
+    color: var(--secondary-color);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a.external:visited {
+color: var(--secondary-color);
+background-color: transparent;
+text-decoration: none;
+}
+
+a.external:hover {
+color: #86DC3D;
+background-color: transparent;
+}
+
+a.external:active {
+color: #86DC3D;
+background-color: transparent;
+}
+
+/* Layout Customization */
+.full-screen {
+    height: 90vh;
+}
+
+.carousel-caption {
+    position: absolute;
+    top:40px;
+    width: 20vw;
+ }
+
+/* Used to divide full-screen */
+.h-15 {
+    height: 15%
+}
+
+.h-20 {
+    height: 20%;
+}
+
+.h-70 {
+    height: 70%;
+}
+
+.h-80 {
+    height: 80%;
+}
+
+li.coming-soon {  /* Keeps hidden page hidden */
+    display: none;
+}
+
+nav ul li {
+    flex: 1;
+    text-align: right;
+}
+    
+/* Images */
+#icon {  /* Keep to make it a button */
+    width: 18px;
+    cursor: pointer;
+}
+
+#build {
+    height: 65vh;
+}
+
+#nhs {
+    height: 65vh;
+}
+
+#orch {
+    height: 65vh;
+}
+
+#uil {
+    height: 65vh;
+}
+
+/* Text Customization */
+.howdy {
+    color: var(--maroon);
+}
+
+.br {
+    display: block;
+    margin-bottom: -.2em;
+}

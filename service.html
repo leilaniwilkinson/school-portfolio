@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <!-- Resizing -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- BootStrap stylesheet -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        <link href="styles.css" type="text/css" rel="stylesheet" />
+        <title>Service - Leilani Wilkinson</title>
+    </head>
+
+    <body>
+        <!-- Separate container style for carousel -->
+        <style>
+            .container {
+                max-width: 70vw;
+                position: relative;
+            }
+        </style>
+
+        <nav class="navbar fixed-top navbar-expand-md">
+            <span class="navbar-brand mt-3 h1"><b>leilani_wilkinson</b></span>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end mt-1" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-link">
+                        <a class="nav-link px-3" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-link">
+                        <a class="nav-link px-3" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-link">
+                        <a class="nav-link px-2" href="qualifications.html">Qualifications</a>
+                    </li>
+                    <li class="nav-link">
+                        <a class="nav-link px-3" href="service.html">Service</a>
+                    </li>
+                    <li class="coming-soon"><a href="dir/index.html">Hidden</a></li>
+                </ul>
+                <img src="images/moon.png" id="icon" onclick="changeTheme()">
+            </div>
+        </nav>
+
+        <div class="container full-screen">
+            <div class="row h-15 mb-5">
+                <div class="col">
+                    <h2 class="text-center">Service</h2>
+                </div>
+            </div>
+            <div class="row h-80">
+                <div class="col mt-5">
+                    <div id="carouselServices" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselServices" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselServices" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselServices" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselServices" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/build-light.png" id="build" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5 class="text-center"><a href="https://www.buildtamu.com/" target="_blank" class="external">Texas A&M Build</a></h5>
+                                    <p class="p3">BUILD is a student organization that unifies students from all across Texas A&M in one 
+                                        shared effort. The mission of BUILD is to plan, build, and send out fully functional portable medical 
+                                        clinics out of shipping containers, otherwise known as Texas Aggie Medical Clinics, around the world. 
+                                        My contribution in the process was priming and painting layers on sheets of drywall as a member of my 
+                                        student organization, the Philippine Student Association.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/nhs-light.png" id="nhs" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5 class="text-center"><a href="https://www.nhs.us/" target="_blank" class="external">National Honor's Society</a></h5>
+                                    <p class="p3">National Honors Society’s mission is to elevate a school’s commitment to the values of scholarship, 
+                                        service, leadership, and character. NHS not only values student achievements but they prioritize community 
+                                        engagement. As a member of my school’s NHS, I helped my school and community through hours of selfless service 
+                                        by volunteering at the elementary schools and middle schools events in my community, guided parents whose English 
+                                        isn’t their first language during school registration, and yearly trash bashes.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/orch-light.png" id="orch" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5 class="text-center"><a href="https://www.bmhsorchestra.com/" target="_blank" class="external">Orchestra</a></h5>
+                                    <p class="p3">For ten years and still running I have been a part of an orchestra. I first started as a bass player for my 
+                                        middle-high school for seven years and I now play for <b><a href="https://musa.tamu.edu/university-orchestras/" target="_blank" class="external">Texas A&M’s Philharmonic Orchestra</a></b>. As a high schooler and 
+                                        section leader of my orchestra, I spent a lot of my time after school teaching and helping out the bass players in my 
+                                        section and the players in the middle school orchestra. I helped the bass players by preparing them for their solo 
+                                        competitions and I would often run our section after school practices too.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/uil-light.png" id="uil" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5 class="text-center"><a href="https://www.uiltexas.org/" target="_blank" class="external">UIL</a></h5>
+                                    <p class="p3">The University Interscholastic League is an organization in Texas that exists to provide educational extracurricular 
+                                        academic, athletic, and music contests. Personally, I have competed in each of these competitions and as a high schooler, I 
+                                        volunteered to help run the academic UIL competitions for the elementary schools in my area. My involvement during the elementary 
+                                        academic competitions included preparing the testing rooms, running the students through the rules, proctoring the students, and 
+                                        grading the math competitions.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselServices" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselServices" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <script src="functions.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    
+    </body>
+
+</html>
